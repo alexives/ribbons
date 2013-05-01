@@ -1,13 +1,9 @@
 <?php
 
-function print_results( $atts ) {
-	extract(shortcode_atts( array(
-		'cat' => -1,
-		'tag' => -1,
-		'zip' => '55033'
-	), $atts ) );
+function print_group_search_results() {
+	
 }
 
-add_shortcode('support_group_search');
+add_shortcode('support_group_search', print_group_search_results());
 
 ?>
